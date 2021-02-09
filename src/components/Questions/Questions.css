@@ -5,41 +5,42 @@
 }
 
 body{
-
   background-color: #34495e;
 }
 
-.App{
+.question-card{
   height: auto;
   width: 380px;
-  margin: 22vh auto auto auto;
+  margin: 5em auto;
   padding: 40px 25px;
-  background-color: #34495e;
   border-radius: 20px;
+  background-color: #34495e;
   box-shadow: 0 27px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.24);
   transition: 0.3s;
 }
 
 .question-section{
-  padding: 10px 10px;
+  padding:  1em;
   width: auto;
   color: white;
 }
 
 .question-section .question-count{
-  font-family: "Arial", fantasy;
+  font-family: "Arial", sans-serif;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
+
 .question-section .question-text{
-  font-family: "Lucida Console", Monaco, sans-serif;
+  font-family: Monaco, sans-serif;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
 .answer-section{
-  display: grid;
-  grid-row-gap: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .answer-button{
@@ -50,20 +51,28 @@ body{
   color:#fff;
   font-size: 1em;
   transition: 0.2s;
+  margin: 0.6em;
 }
-.answer-button:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.answer-button:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
 }
 
 .scoreCard{
-  padding: 65px 35px;
-  font-family: "Arial", sans-serif;
-  color: #fff;
-  font-size: 45px;
+    background-color: #34495e;
+    box-shadow: 0 27px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.24);
+    border-radius: 20px;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    font-size: 45px;
+    padding: 1.3em;
+    font-family: "Arial", sans-serif;
+    margin: 5em auto;
+    color: #fff;
 }
 
-@media only screen and (max-width: 600px) {
-    .App{
+@media only screen and (max-width: 610px) {
+    .card{
       width: 320px;
       margin: 15vh auto auto auto;
       padding: 40px 20px;
