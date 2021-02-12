@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import "./Home.css"
 
 function Home(){
-	const [topics, setTopics] = useState(["Science", "Computer Science", "Technology", "Geography", "General Knowledge"])
+	const [topics, setTopics] = useState(["Science", "Computer Science", "Technology", "Geography", "Programming"])
 
 	return(
 		<div>
