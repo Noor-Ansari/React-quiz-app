@@ -7,21 +7,21 @@ import {geographyData, techData, csData, scienceData, programmingData} from "./a
 import QuestionCard from "./components/Questions/Questions";
 
 function App() {
-  const history = createBrowserHistory();
-  return(
-  		<div className="app">
-			<Router history={history}>	
-				<Switch>
-					<Route exact path="/"> <Home/></Route>
-					<Route exact path="/Science"> <QuestionCard data={scienceData}/></Route>
-					<Route exact path="/Geography"> <QuestionCard data={geographyData}/></Route>
-					<Route exact path="/Programming"> <QuestionCard data={programmingData}/></Route>
-					<Route exact path="/Technology"> <QuestionCard data={techData}/></Route>
-					<Route exact path="/Computer Science"> <QuestionCard data={csData}/></Route>
-				</Switch>
-			</Router>
-		</div>
-  )
-}
+	const history = createBrowserHistory();
+	return(
+	<div className="app">
+		<Router history={history}>	
+			<Switch>
+				<Route exact path="/"> <Home/></Route>
+				<Route exact path="/Science"> <QuestionCard data={scienceData}/></Route>
+				<Route exact path="/Geography"> <QuestionCard data={geographyData}/></Route>
+				<Route exact path="/Programming"> <QuestionCard data={programmingData}/></Route>
+				<Route exact path="/Technology"> <QuestionCard data={techData}/></Route>
+				<Route exact path="/Computer Science"> <QuestionCard data={csData}/></Route>
+			</Switch>
+		</Router>
+	</div>
+	  )
+	}
 
 export default App;
